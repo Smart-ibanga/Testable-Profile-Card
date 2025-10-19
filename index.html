@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profileCard">
+        <header>
+            <img 
+                src="assets/smart1.jpg"
+                alt="Profile Picture" 
+                class="profile-picture" 
+                data-testid="profilePicture"
+            >
+            <h1 class="full-name" data-testid="fullName">Ibanga Smart</h1>
+            <h2 class="job-title" data-testid="jobTitle">FRONTEND DEVELOPER</h2>
+        </header>
+        <section>
+            <p class="short-bio" data-testid="shortBio">
+                Passionate frontend developer with a few years of experience in building web applications with the 
+                Html, Css and Javascript. Always eager to learn and contribute to innovative projects.
+              </p>
+              <address>
+                <p class="current-location" data-testid="currentLocation">📍Lagos, Nigeria</p>
+                <p class="email-address" data-testid="emailAddress">✉️ibangasmart@gmail.com</p>
+              </address>
+              <nav class="social-links" data-testid="socialLinks">
+                <a href="https://www.linkedin.com/in/ibanga-smart" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Smart-ibanga" target="_blank">GitHub</a>
+                <a href="https://x.com/IbangaSmart" target="_blank">Twitter</a>
+              </nav>
+        </section>
+        <footer>
+            <p class="current-time-utc" data-testid="currentTimeUTC"></p>
+        </footer>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>

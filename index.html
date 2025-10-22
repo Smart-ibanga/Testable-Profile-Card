@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile card</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/about.css">
 </head>
 <body>
     <article class="profile-card" data-testid="test-profileCard">
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" data-testid="test-nav-home">Profile</a></li>
+                <li><a href="./html/about.html" data-testid="test-nav-about">About Me</a></li>
+                <li><a href="./html/contact.html" data-testid="test-nav-contact">Contact</a></li>
+            </ul>
+        </nav>
         <header class="profile-header"   >
              <figure class="avatar-container">
                 <img 
@@ -28,11 +37,11 @@
             </div>
         </header>
         <section>
-            <nav class="social-links" data-testid="test-user-social-links">
+            <div class="social-links" data-testid="test-user-social-links">
                 <a href="https://www.linkedin.com/in/ibanga-smart" target="_blank" data-testid="test-user-linkedin">LinkedIn</a>
                 <a href="https://github.com/Smart-ibanga" target="_blank" data-testid="test-user-github">GitHub</a>
                 <a href="https://x.com/IbangaSmart" target="_blank" data-testid="test-user-twitter">Twitter</a>
-            </nav>
+            </div>
         </section>
         <section class="hobbies-dislikes">
             <section class="hobbies-section">

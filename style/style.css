@@ -16,20 +16,39 @@
   }
   
   .profile-card {
-    background: #ffffff;
+    background:  #f8fafc;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
     padding: 30px;
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .profile-card:hover {
+
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .profile-header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+   .profile-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   }
+
+  .avatar-container {
+    flex-shrink: 0;
+}
   
   .profile-picture {
     width: 120px;
@@ -37,9 +56,41 @@
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #0073b1;
-    margin-bottom: 20px;
   }
   
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+  @media (min-width: 768px) {
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+}
+  
+  .profile-info {
+    flex: 1;
+    min-width: 0; 
+}
+
+ 
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0073b1;
+    text-transform: uppercase;
+  }
+
+
   .full-name {
     font-size: 28px;
     margin-bottom: 10px;
@@ -52,6 +103,31 @@
     margin-bottom: 15px;
   }
   
+  .hobbies-dislikes{
+    /* display: flex; */
+    justify-content: center;
+    /* gap: 10px; */
+    margin-bottom: 20px;
+  }
+
+  .hobbies-list,
+.dislikes-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+    .hobbies-list li,
+.dislikes-list li {
+    background: #f8fafc;
+    padding: 0.5rem 1rem ;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    border: 1px solid #e2e8f0;
+}
+
   .short-bio {
     font-size: 16px;
     color: #555;
@@ -88,6 +164,11 @@
     transition: color 0.3s ease;
   }
   
+  .social-link:focus,
+button:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
   .social-links a:hover {
     color: #0056b3;
   }
@@ -128,5 +209,8 @@
   
     .social-links a {
       font-size: 16px;
+      flex-direction: column;
     }
   }
+
+

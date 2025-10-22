@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile card</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <article class="profile-card" data-testid="test-profileCard">
+        <header class="profile-header"   >
+             <figure class="avatar-container">
+                <img 
+                    src="../assets/smart1.jpg"
+                    alt="Profile Picture" 
+                    class="profile-picture" 
+                    data-testid="test-user-avatar"
+                >
+                <figcaption class="visually-hidden">User profile picture</figcaption>
+            </figure>
+            <div class="profile-info">
+                <h1 class="full-name" data-testid="fullName">Ibanga Smart</h1>
+                <h2 class="job-title" data-testid="jobTitle">FRONTEND DEVELOPER</h2>
+                <p class="short-bio" data-testid="test-user-bio">
+                    Passionate frontend developer with a few years of experience in building web applications with the 
+                    Html, Css and Javascript. Always eager to learn and contribute to innovative projects.
+                </p>
+            </div>
+        </header>
+        <section>
+            <nav class="social-links" data-testid="test-user-social-links">
+                <a href="https://www.linkedin.com/in/ibanga-smart" target="_blank" data-testid="test-user-linkedin">LinkedIn</a>
+                <a href="https://github.com/Smart-ibanga" target="_blank" data-testid="test-user-github">GitHub</a>
+                <a href="https://x.com/IbangaSmart" target="_blank" data-testid="test-user-twitter">Twitter</a>
+            </nav>
+        </section>
+        <section class="hobbies-dislikes">
+            <section class="hobbies-section">
+                <h3 class="section-title">Hobbies</h3>
+                <ul class="hobbies-list" data-testid="test-user-hobbies">
+                    <li>Teaching </li>
+                    <li>Traveling </li>
+                    <li>Reading </li>
+                </ul>
+            </section>
+            <section class="dislikes-section">
+                <h3 class="section-title">Dislikes</h3>
+                <ul class="dislikes-list" data-testid="test-user-dislikes">
+                    <li>Traffic jams</li>
+                    <li>Cold coffee</li>
+                    <li>Laziness</li>
+                </ul>
+            </section>
+        </section>
+        <footer>
+            <p class="current-time-utc" data-testid="test-user-time"></p>
+        </footer>
+    </article>
+    <script src="../script/script.js"></script>
+</body>
+</html>
